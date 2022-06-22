@@ -52,15 +52,13 @@ While not strictly a requirement, we suggest to install the
 the generated output.
 
 <h3>Experimental evaluation</h3>
-We report the result of an
-<a href="PHAVerLite-SAS2019.html">experimental evalution</a>,
-based on the benchmarks of the ARCH-COMP 2019 friendly competition.
+PHAVerLite took part to several editions of the ARCH-COMP friendly competition.
 
 <h3>Support</h3>
 If you need help for using PHAVerLite,
 <a href="mailto:enea.zaffanella@unipr.it">ask me</a>.</em>
 <p>
-Here are <a href="PHAVerLite-syntax">a few notes on PHAVerLite's
+Here are <a href="#PHAVerLite-syntax">a few notes on PHAVerLite's
 specification language</a>.
 
 <h3>Features</h3>
