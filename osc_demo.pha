@@ -1,0 +1,53 @@
+// The model of the oscillator
+automaton osc_demo
+contr_var: x, y;
+synclabs: tau;
+
+loc y_nonneg:
+  while -1 <= x <= 1 & 0 <= y <= 1
+  wait {
+    -6.5*y <= x' + 2*x <= -5.5*y &
+    y' == 6*x
+  };
+  when y == 0 sync tau
+    do { x' == x & y' == y } goto y_nonpos;
+
+loc y_nonpos:
+  while -1 <= x <= 1 & -1 <= y <= 0
+  wait {
+   -5.5*y <= x' + 2*x <= -6.5*y &
+   y' == 6*x
+  };
+  when y == 0 sync tau
+    do { x' == x & y' == y } goto y_nonneg;
+
+initially:
+  y_nonneg & 0.7 <= x <= 0.8 & 0.2 <= y <= 0.25;
+
+end
+
+
+REACH_USE_CONVEX_HULL = true;
+SEARCH_METHOD_TOPSORT_TOKENS = 10;
+
+// Define the constraints for partitioning
+steps := 128;
+osc_demo.set_refine_constraints((x, 1/steps), (y, 1/steps), tau);
+
+// Compute and print the reachable states
+reach = osc_demo.reachable;
+reach.print("out_reach", 2);
+
+// Compute and print the invariants
+invar = osc_demo.get_invariants;
+invar.print("out_invar", 2);
+
+// Compute and print the initial states
+init = osc_demo.initial_states;
+init.print("out_init", 2);
+
+/**********************************
+// Commands to produce png file
+phaverlite -v256001 osc_demo.pha
+graph -T png --bitmap-size "4000x4000" -r0 -u0 -h 1 -w 1 -C -B -f 0.05 -W 0 -x -1 1 -y -1 1 -F HersheySerif -X x\sb1 -Y x\sb2 -s -m1 out_invar -s -m3 -q0.6 out_reach -s -m3 -q0.9 out_init  > osc_demo.png
+***********************************/
