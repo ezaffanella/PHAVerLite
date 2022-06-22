@@ -58,7 +58,7 @@ PHAVerLite took part to several editions of the ARCH-COMP friendly competition.
 If you need help for using PHAVerLite,
 <a href="mailto:enea.zaffanella@unipr.it">ask me</a>.</em>
 <p>
-Here are <a href="#PHAVerLite-syntax">a few notes on PHAVerLite's
+Here are <a href="#phaverlites-specification-language">a few notes on PHAVerLite's
 specification language</a>.
 
 <h3>Features</h3>
@@ -162,7 +162,6 @@ this may work on other reasonably recent Linux distributions as well.
  
 <hr>
 
-A NAME="PHAVerLite-syntax">
 <h3>PHAVerLite's specification language</h3>
 PHAVerLite inherits most of
 <a href="http://www-verimag.imag.fr/~frehse/phaver_web/phaver_lang.pdf">the
