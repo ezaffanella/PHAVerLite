@@ -1,0 +1,2 @@
+# PHAVerLite
+PHAVerLite = PHAVer + PPLite
