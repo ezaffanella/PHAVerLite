@@ -161,5 +161,63 @@ this may work on other reasonably recent Linux distributions as well.
 </ul>
  
 <hr>
-  
+
+A NAME="PHAVerLite-syntax">
+<h3>PHAVerLite's specification language</h3>
+PHAVerLite inherits most of
+<a href="http://www-verimag.imag.fr/~frehse/phaver_web/phaver_lang.pdf">the
+specification language of PHAVer</a>.
+
+<P>
+A few of the language commands and parameters of PHAVer are not supported;
+also, a few parameters have been subject to renaming in an attempt
+to somehow improve consistency.
+Here is a brief summary of the main changes.
+
+<ul>
+
+<li>
+PHAVer's keywords
+<strong>do</strong>, <strong>end</strong>, <strong>goto</strong>,
+<strong>sync</strong>, <strong>wait</strong> are treated
+as <em>identifiers</em> in PHAVerLite; hence, they can be used
+as location names and/or syncronization label names
+without causing a syntax error.</li>
+
+<li>
+Parameter USE_CONVEX_HULL has been renamed to REACH_USE_CONVEX_HULL.
+</li>
+<li>Added parameter REACH_USE_CONSTRAINT_HULL.</li>
+
+<li>
+Parameter CHEAP_CONTAIN_RETURN_OTHERS has been renamed to
+REACH_CHEAP_CONTAINS.
+</li>
+<li>Added parameter REACH_CHEAP_CONTAINS_USE_BBOX.</li>
+
+<li>
+Parameter ELAPSE_TIME has been renamed to REACH_USE_TIME_ELAPSE.
+</li>
+
+<li>
+Parameter SEARCH_METHOD has been changed to only accept 3 values
+(rather than the 8 values accepted by PHAVer):
+  <ul>
+  <li>value 0: transaction based
+      (corresponding to value 0 in PHAVer);</li>
+  <li>value 1: topological sort of all states
+      (corresponding to value 7 in PHAVer);</li>
+  <li>value 2: topological sort of reachable states
+      (corresponding to value 6 in PHAVer);
+      this is the value used by default.</li>
+  </ul>
+</li>
+
+<li>Parameter REACH_ONLY_EXPLORE has been removed.</li>
+<li>Parameter REFINE_LOCATION_PLANE has been removed.</li>
+<li>All parameters related to simulation checking have been removed
+    (as simulation checking is no longer supported).</li>
+</ul>
+
+ 
   
