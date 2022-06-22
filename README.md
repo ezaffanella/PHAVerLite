@@ -1,2 +1,167 @@
 # PHAVerLite
-PHAVerLite = PHAVer + PPLite
+
+PHAVerLite (<a href="http://www-verimag.imag.fr/~frehse/phaver_web/index.html">PHAVer</a> +
+<a href="https://github.com/ezaffanella/PPLite">PPLite</a>) is a variant of PHAVer,
+a formal verification tool for computing reachability of hybrid systems.
+<p>
+The main difference with respect to PHAVer,
+originally developed by <a href="https://sites.google.com/site/frehseg/">Goran Frehse</a>
+and later included as a plugin in the <a href="http://spaceex.imag.fr/">SpaceEx</a> platform,
+is the replacement of the Parma Polyhedra Library (<a href="https://www.bugseng.com/parma-polyhedra-library">PPL</a>)
+with PPLite, a software library exploiting novel representations and algorithms for the manipulation of polyhedra.
+
+<h3>Current version</h3>
+<ul>
+<li>
+2020-11-24:
+<a href="releases/phaverlite-0.4.tar.gz">PHAVerLite 0.4 can be downloaded</a>.
+<br>
+This is based on PPLite 0.7.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.4_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-123.
+</li>
+<li>
+<a href="#downloads">Links to all versions released</a>.
+</li>
+</ul>
+
+<h3>Usage example</h3>
+Try command <strong>phaverlite -v256001 osc_demo.pha</strong>.
+<br>
+File <a href="osc_demo.pha">osc_demo.pha</a> contains the hybrid model,
+the configuration commands and (commented out) the graph utility command
+needed to produce a high quality version of the image in this web page.
+
+
+<h3>Building from sources</h3>
+PHAVerLite is currently developed on a Linux system.
+In order to build it from sources the following
+dependencies need to be satisfied (see file README):
+<ul>
+<li>a C++ compiler supporting the 2011 standard
+(e.g., <strong>g++</strong> or <strong>clang++</strong>);</li>
+<li>reasonably recent versions of <strong>flex</strong>
+and <strong>bison</strong>;</li>
+<li>reasonably recent versions of numeric libraries
+<strong>GMP</strong>, <strong>MPFR</strong> and <strong>FLINT</strong>;</li>
+<li>a <em>specific</em> version of the PPLite library.</li>
+</ul>
+While not strictly a requirement, we suggest to install the
+<strong>graphviz</strong> tools to allow graphical display of
+the generated output.
+
+<h3>Experimental evaluation</h3>
+We report the result of an
+<a href="PHAVerLite-SAS2019.html">experimental evalution</a>,
+based on the benchmarks of the ARCH-COMP 2019 friendly competition.
+
+<h3>Support</h3>
+If you need help for using PHAVerLite,
+<a href="mailto:enea.zaffanella@unipr.it">ask me</a>.</em>
+<p>
+Here are <a href="PHAVerLite-syntax">a few notes on PHAVerLite's
+specification language</a>.
+
+<h3>Features</h3>
+PHAVerLite currently provides a subset of the functionalities offered by PHAVer, focusing on automata where:
+<ul>
+<li>state variable are continuous;</li>
+<li>each location invariant is a finite set of rational, convex,
+NNC (not necessarily topologically closed) polyhedra;</li>
+<li>each discrete transition between locations is a convex linear
+predicate on pre/post values of the state variables;</li>
+<li>the continuous dynamics at locations is modeled by
+piecewise constant bounds on the derivatives of state variables.</li>
+</ul>
+Note that some of the PHAVer functionalities (e.g., the computation of simulation relations)
+have been deliberately removed, whereas a few of the design and
+implementation choices have been (or are being) reconsidered.
+While being heavily based on the original PHAVer,
+PHAVerLite source code is being rewritten in modern C++,
+so as to simplify both maintenance and experimentation
+with novel algorithms and design tradeoffs.
+The developers should feel free to use language features made
+available by the recent standards, provided these lead to
+a simpler implementation or improve on code <em>readability</em>.
+
+<h3>Development team</h3>
+As said above, the starting point for the project was
+the source code of PHAVer, developed by Goran Frehse.
+The following people have contributed to the project:
+
+<ul>
+<li>Enea Zaffanella (main developer, supervisor)</li>
+<li>Anna Becchi (contributor, former student)</li>
+<li>Idriss Riouak (contributor, former student)</li>
+</ul>
+
+Besides writing/improving PHAVerLite source code,
+contributions to the project include the design and implementation
+of a few ad-hoc algorithms on NNC polyhedra (thereby improving PPLite)
+and the development of a stand-alone tool for translating SpaceEx models into PHAVer syntax.
+
+<HR>
+
+<A NAME="downloads">
+<h3>Available downloads</h3>
+Note: older versions are no longer maintained; we highly recommend
+to switch to the most recent one.
+<ul>
+<li>
+2020-11-24:
+<a href="releases/phaverlite-0.4.tar.gz">PHAVerLite 0.4 can be downloaded</a>.
+<br>
+This is based on PPLite 0.7.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.4_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-123.
+</li>
+<li>
+2020-06-15:
+<a href="releases/phaverlite-0.3.1.tar.gz">PHAVerLite 0.3.1 can be downloaded</a>.
+<br>
+This fixes a bug in version 0.3 (no other changes).
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.3.1_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-106.
+</li>
+<li>
+2020-04-23:
+<a href="releases/phaverlite-0.3.tar.gz">PHAVerLite 0.3 can be downloaded</a>.
+<br>
+This is based on PPLite 0.6.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.3_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-96.
+</li>
+<li>2019-10-17:
+<a href="releases/phaverlite-0.2.1.tar.gz">PHAVerLite 0.2.1 can be downloaded</a>.
+<br>
+This is based on PPLite 0.5.1, which fixes a bug that may be affecting
+the computation of discrete transitions.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.2.1_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-65.
+</li>
+<li>2019-07-12:
+<a href="releases/phaverlite-0.2.tar.gz">PHAVerLite 0.2 can be downloaded</a>.
+<br>
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.2_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-54.
+</li>
+<li>2019-03-08:
+<a href="releases/phaverlite-0.1.tar.gz">PHAVerLite 0.1 can be downloaded</a>.
+<br>
+For convenience, we also
+distribute the (gzipped)
+<a href="releases/phaverlite-0.1_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 4.15.0-46;
+this may work on other reasonably recent Linux distributions as well.
+</li>
+</ul>
+ 
+<hr>
+  
+  
