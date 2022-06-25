@@ -31,7 +31,7 @@ Try command <strong>phaverlite -v256001 osc_demo.pha</strong>.
 <br>
 File <a href="osc_demo.pha">osc_demo.pha</a> contains the hybrid model,
 the configuration commands and (commented out) the graph utility command
-needed to produce a high quality version of the image in this web page.
+needed to produce an image of the computed reachable set.
 
 
 <h3>Building from sources</h3>
