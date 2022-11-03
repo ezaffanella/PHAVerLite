@@ -13,13 +13,13 @@ with PPLite, a software library exploiting novel representations and algorithms 
 <h3>Current version</h3>
 <ul>
 <li>
-2020-11-24:
-<a href="releases/phaverlite-0.4.tar.gz">PHAVerLite 0.4 can be downloaded</a>.
+2022-11-03:
+<a href="releases/phaverlite-0.5.tar.gz">PHAVerLite 0.5 can be downloaded</a>.
 <br>
-This is based on PPLite 0.7.
+This is based on PPLite 0.8.
 For convenience, we also distribute the (gzipped)
-<a href="releases/phaverlite-0.4_static.gz">statically linked executable</a>
-for x86_64 machines, built on Linux 4.15.0-123.
+<a href="releases/phaverlite-0.5_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 5.4.0-131-generic.
 </li>
 <li>
 <a href="#downloads">Links to all versions released</a>.
@@ -39,7 +39,7 @@ PHAVerLite is currently developed on a Linux system.
 In order to build it from sources the following
 dependencies need to be satisfied (see file README):
 <ul>
-<li>a C++ compiler supporting the 2011 standard
+<li>a C++ compiler supporting the 2017 standard
 (e.g., <strong>g++</strong> or <strong>clang++</strong>);</li>
 <li>reasonably recent versions of <strong>flex</strong>
 and <strong>bison</strong>;</li>
@@ -106,6 +106,15 @@ and the development of a stand-alone tool for translating SpaceEx models into PH
 Note: older versions are no longer maintained; we highly recommend
 to switch to the most recent one.
 <ul>
+<li>
+2022-11-03:
+<a href="releases/phaverlite-0.5.tar.gz">PHAVerLite 0.5 can be downloaded</a>.
+<br>
+This is based on PPLite 0.8.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.5_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 5.4.0-131-generic.
+</li>
 <li>
 2020-11-24:
 <a href="releases/phaverlite-0.4.tar.gz">PHAVerLite 0.4 can be downloaded</a>.
