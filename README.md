@@ -13,13 +13,13 @@ with PPLite, a software library exploiting novel representations and algorithms 
 <h3>Current version</h3>
 <ul>
 <li>
-2022-11-03:
-<a href="releases/phaverlite-0.5.tar.gz">PHAVerLite 0.5 can be downloaded</a>.
+2023-05-29:
+<a href="releases/phaverlite-0.6.tar.gz">PHAVerLite 0.6 can be downloaded</a>.
 <br>
-This is based on PPLite 0.8.
+This is based on PPLite 0.10.2.
 For convenience, we also distribute the (gzipped)
-<a href="releases/phaverlite-0.5_static.gz">statically linked executable</a>
-for x86_64 machines, built on Linux 5.4.0-131-generic.
+<a href="releases/phaverlite-0.10.2_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 5.15.0-72.
 </li>
 <li>
 <a href="#downloads">Links to all versions released</a>.
@@ -97,7 +97,8 @@ The following people have contributed to the project:
 Besides writing/improving PHAVerLite source code,
 contributions to the project include the design and implementation
 of a few ad-hoc algorithms on NNC polyhedra (thereby improving PPLite)
-and the development of a stand-alone tool for translating SpaceEx models into PHAVer syntax.
+and the development of a stand-alone tool for translating
+SpaceEx models into PHAVer syntax.
 
 <HR>
 
@@ -106,6 +107,17 @@ and the development of a stand-alone tool for translating SpaceEx models into PH
 Note: older versions are no longer maintained; we highly recommend
 to switch to the most recent one.
 <ul>
+
+<li>
+2023-05-29:
+<a href="releases/phaverlite-0.6.tar.gz">PHAVerLite 0.6 can be downloaded</a>.
+<br>
+This is based on PPLite 0.10.2.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.10.2_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 5.15.0-72.
+</li>
+
 <li>
 2022-11-03:
 <a href="releases/phaverlite-0.5.tar.gz">PHAVerLite 0.5 can be downloaded</a>.
@@ -168,7 +180,7 @@ for x86_64 machines, built on Linux 4.15.0-46;
 this may work on other reasonably recent Linux distributions as well.
 </li>
 </ul>
- 
+
 <hr>
 
 <h3>PHAVerLite's specification language</h3>
@@ -227,5 +239,3 @@ Parameter SEARCH_METHOD has been changed to only accept 3 values
     (as simulation checking is no longer supported).</li>
 </ul>
 
- 
-  
