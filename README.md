@@ -12,18 +12,21 @@ with PPLite, a software library exploiting novel representations and algorithms 
 
 <h3>Current version</h3>
 <ul>
+
 <li>
-2023-05-29:
-<a href="releases/phaverlite-0.6.tar.gz">PHAVerLite 0.6 can be downloaded</a>.
+2024-04-12:
+<a href="releases/phaverlite-0.7.tar.gz">PHAVerLite 0.7 can be downloaded</a>.
 <br>
-This is based on PPLite 0.10.2.
+This is based on PPLite 0.12.
 For convenience, we also distribute the (gzipped)
-<a href="releases/phaverlite-0.10.2_static.gz">statically linked executable</a>
-for x86_64 machines, built on Linux 5.15.0-72.
+<a href="releases/phaverlite-0.7_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 5.15.0-101.
 </li>
+
 <li>
 <a href="#downloads">Links to all versions released</a>.
 </li>
+
 </ul>
 
 <h3>Usage example</h3>
@@ -109,12 +112,22 @@ to switch to the most recent one.
 <ul>
 
 <li>
+2024-04-12:
+<a href="releases/phaverlite-0.7.tar.gz">PHAVerLite 0.7 can be downloaded</a>.
+<br>
+This is based on PPLite 0.12.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.7_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 5.15.0-101.
+</li>
+
+<li>
 2023-05-29:
 <a href="releases/phaverlite-0.6.tar.gz">PHAVerLite 0.6 can be downloaded</a>.
 <br>
 This is based on PPLite 0.10.2.
 For convenience, we also distribute the (gzipped)
-<a href="releases/phaverlite-0.10.2_static.gz">statically linked executable</a>
+<a href="releases/phaverlite-0.6_static.gz">statically linked executable</a>
 for x86_64 machines, built on Linux 5.15.0-72.
 </li>
 
