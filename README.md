@@ -14,13 +14,13 @@ with PPLite, a software library exploiting novel representations and algorithms 
 <ul>
 
 <li>
-2024-04-12:
-<a href="releases/phaverlite-0.7.tar.gz">PHAVerLite 0.7 can be downloaded</a>.
+2024-08-04:
+<a href="releases/phaverlite-0.8.tar.gz">PHAVerLite 0.8 can be downloaded</a>.
 <br>
-This is based on PPLite 0.12.
+This is based on PPLite 0.14.
 For convenience, we also distribute the (gzipped)
-<a href="releases/phaverlite-0.7_static.gz">statically linked executable</a>
-for x86_64 machines, built on Linux 5.15.0-101.
+<a href="releases/phaverlite-0.8_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 7.0.0-28.
 </li>
 
 <li>
@@ -110,6 +110,16 @@ SpaceEx models into PHAVer syntax.
 Note: older versions are no longer maintained; we highly recommend
 to switch to the most recent one.
 <ul>
+
+<li>
+2024-08-04:
+<a href="releases/phaverlite-0.8.tar.gz">PHAVerLite 0.8 can be downloaded</a>.
+<br>
+This is based on PPLite 0.14.
+For convenience, we also distribute the (gzipped)
+<a href="releases/phaverlite-0.8_static.gz">statically linked executable</a>
+for x86_64 machines, built on Linux 7.0.0-28.
+</li>
 
 <li>
 2024-04-12:
