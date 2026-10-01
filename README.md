@@ -14,7 +14,7 @@ with PPLite, a software library exploiting novel representations and algorithms 
 <ul>
 
 <li>
-2024-08-04:
+2026-08-04:
 <a href="releases/phaverlite-0.8.tar.gz">PHAVerLite 0.8 can be downloaded</a>.
 <br>
 This is based on PPLite 0.14.
@@ -112,7 +112,7 @@ to switch to the most recent one.
 <ul>
 
 <li>
-2024-08-04:
+2026-08-04:
 <a href="releases/phaverlite-0.8.tar.gz">PHAVerLite 0.8 can be downloaded</a>.
 <br>
 This is based on PPLite 0.14.
