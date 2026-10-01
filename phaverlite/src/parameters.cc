@@ -36,7 +36,6 @@ void
 General::print(std::ostream& os) const {
   os << "  /* general parameters */\n";
   os << "POLY_KIND = " << poly_kind << ";\n";
-  os << "POLY_KIND = " << poly_kind << ";\n";
   os << "MAINTAIN_BOXED_CCVS = " << maintain_boxed_ccvs << ";\n";
   os << "MINIMIZE_FILTER_THRESHOLD = "
      << minimize_filter_threshold << ";\n";
@@ -99,7 +98,7 @@ Refine::print(std::ostream& os) const {
   os << "REFINE_PRIORITIZE_ANGLE = " << prioritize_angle << ";\n";
   os << "REFINE_SMALLEST_FIRST = " << smallest_first << ";\n";
   os << "REFINE_DERIV_MINANGLE = " << deriv_minangle << ";\n";
-  os << "REFINE_partition_inside = " << partition_inside << ";\n";
+  os << "REFINE_PARTITION_INSIDE = " << partition_inside << ";\n";
   os << "REFINE_FB_METHOD = " << fb_method << ";\n";
   os << "REFINE_MAX_CHECKS = " << max_checks << ";\n";
   os << std::endl;
@@ -124,9 +123,9 @@ void print_params(std::ostream& os) {
   reach.print(os);
   search.print(os);
   limit.print(os);
-  reach.print(os);
   refine.print(os);
   output.print(os);
+
   // restore stream fmtflags
   os.flags(ff);
 }
@@ -136,7 +135,6 @@ void reset_default_params() {
   reach.reset_defaults();
   search.reset_defaults();
   limit.reset_defaults();
-  reach.reset_defaults();
   refine.reset_defaults();
   output.reset_defaults();
 }
